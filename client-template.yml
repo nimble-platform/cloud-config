@@ -4,3 +4,6 @@ logging:
       springframework: DEBUG
     com:
       netflix: DEBUG
+eureka:
+  instance:
+    instanceId: ${spring.application.name}
