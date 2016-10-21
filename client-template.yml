@@ -1,4 +1,3 @@
-
 logging:
   level:
     org:
@@ -10,10 +9,8 @@ spring:
   profiles: cloud
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
     nonSecurePort: 80
     hostname: ${vcap.application.uris[0]}
   client:
-    service-url:
-      defaultZone: ${vcap.services.discovery-service.credentials.url}
+    serviceUrl:
+      defaultZone: ${vcap.services.discovery-service.credentials.url}/eureka/
