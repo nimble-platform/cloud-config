@@ -4,13 +4,3 @@ logging:
       springframework: DEBUG
     com:
       netflix: DEBUG
----
-spring:
-  profiles: cloud
-eureka:
-  instance:
-    nonSecurePort: 80
-    hostname: ${vcap.application.uris[0]}
-  client:
-    serviceUrl:
-      defaultZone: ${vcap.services.discovery-service.credentials.url}/eureka/
