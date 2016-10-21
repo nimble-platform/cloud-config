@@ -5,7 +5,7 @@ eureka:
   instance:
     nonSecurePort: 80
     hostname: ${vcap.application.uris[0]}
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    # instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
       defaultZone: ${vcap.services.discovery-service.credentials.url}/eureka/
