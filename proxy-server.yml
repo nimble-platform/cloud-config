@@ -1,5 +1,5 @@
 zuul:
   routes:
     users:
-      path: /myusers/**
+      path: /client/**
       serviceId: client-template
