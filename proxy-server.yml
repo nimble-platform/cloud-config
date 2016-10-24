@@ -3,3 +3,6 @@ zuul:
     users:
       path: /client/**
       serviceId: client-template
+    registration:
+      path: /user/**
+      serviceId: user-registration
