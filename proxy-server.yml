@@ -2,7 +2,7 @@ zuul:
   routes:
     users:
       path: /client/**
-      serviceId: client-template
+      serviceId: sample-client
     registration:
       path: /user/**
       serviceId: user-registration
