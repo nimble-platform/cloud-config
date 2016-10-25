@@ -6,3 +6,4 @@ zuul:
     registration:
       path: /user/**
       serviceId: user-registration
+test: bla
