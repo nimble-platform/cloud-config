@@ -1,6 +1,6 @@
 ---
 spring:
-  profiles: cloud
+  profiles: cloudfoundry
 eureka:
   instance:
     nonSecurePort: 80
