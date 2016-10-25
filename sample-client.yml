@@ -1,6 +1,6 @@
-logging:
-  level:
-    org:
-      springframework: DEBUG
-    com:
-      netflix: DEBUG
+# logging:
+#   level:
+#     org:
+#       springframework: DEBUG
+#     com:
+#       netflix: DEBUG
