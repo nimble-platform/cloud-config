@@ -4,3 +4,6 @@
 #       springframework: DEBUG
 #     com:
 #       netflix: DEBUG
+spring:
+  datasource:
+    password: '{cipher}AQDHXwfFPKenf6+2EB1oZzX5T6gAucSsslbKyAZRdsrgEMWEjY9dfVyx27oUjkUalaMa8PV3FAmUEY7VIhjImNX9pSbx0vqmg7ay98l9BIHX+IU7U7cKKDVu3uJi2tbbtmzqHTbsewBzo/wYi8y+vt+602pRfu73eEHaeMKwzgW3JxLyXqzMxRuZP4MIIjXGPXssbbk4IYXHpk3KzolDZmhNxBBc6gy9F7CWN5N8ADEpg7YwSIPla5dT6fQIwW8CKc2RrmcLW16YIRSKJt/lhRC9LJHW4BEwUYKwWIZ81k1fbevKJCU+23bHxpftNkbjccWWgslaSJxpoBTwvVY6Di/J+QJOXl6uN2pfRW0vceRbeeFHpf7HOcV0dw4vc6l3reo='
