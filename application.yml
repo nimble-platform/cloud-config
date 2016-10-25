@@ -16,10 +16,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${vcap.services.discovery-service.credentials.url}/eureka/
----
-spring:
-  profiles: docker
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://service-discovery:8761/eureka/
