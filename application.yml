@@ -12,7 +12,6 @@ spring:
   profiles: cloudfoundry
 eureka:
   instance:
-    nonSecurePort: 80
     hostname: ${vcap.application.uris[0]}
     preferIpAddress: false
   client:
