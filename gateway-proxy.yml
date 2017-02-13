@@ -1,5 +1,8 @@
 zuul:
   routes:
+    frontend:
+      path: /frontend/**
+      serviceId: fontend-service
     users:
       path: /client/**
       serviceId: sample-client
