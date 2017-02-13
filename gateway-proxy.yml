@@ -4,8 +4,8 @@ zuul:
       path: /frontend/**
       serviceId: frontend-service
     users:
-      path: /client/**
-      serviceId: sample-client
+      path: /identity/**
+      serviceId: identity-service
     registration:
       path: /user/**
       serviceId: user-registration
