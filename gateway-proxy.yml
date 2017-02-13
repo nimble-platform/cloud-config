@@ -1,11 +1,11 @@
 zuul:
   routes:
+    frontend:
+      path: /frontend/**
+      serviceId: frontend-service
     users:
       path: /client/**
       serviceId: sample-client
     registration:
       path: /user/**
       serviceId: user-registration
-    frontend:
-      path: /**
-      serviceId: frontend-service
