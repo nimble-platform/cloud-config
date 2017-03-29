@@ -10,5 +10,5 @@ zuul:
       path: /catalog/**
       serviceId: catalogue-service-srdc
     business-process:
-      path: business-process
+      path: /business-process/**
       serviceId: business-process-service
