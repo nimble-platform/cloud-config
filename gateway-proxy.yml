@@ -3,9 +3,12 @@ zuul:
     frontend:
       path: /frontend/**
       serviceId: frontend-service
-    users:
+    identity:
       path: /identity/**
       serviceId: identity-service
-    registration:
-      path: /user/**
-      serviceId: user-registration
+    catalog:
+      path: /catalog/**
+      serviceId: catalogue-service-srdc
+    business-process:
+      path: business-process
+      serviceId: business-process-service
