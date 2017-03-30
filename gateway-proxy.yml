@@ -24,8 +24,8 @@ eureka:
     leaseExpirationDurationInSeconds: 5
   client:
     initialInstanceInfoReplicationIntervalSeconds: 5
-        registryFetchIntervalSeconds: 1
-        
+    registryFetchIntervalSeconds: 1
+
 ribbon:
   ServerListRefreshInterval: 3
   ReadTimeout: 100000
