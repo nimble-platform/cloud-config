@@ -22,3 +22,14 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${vcap.services.discovery-service.credentials.url}/eureka/
+
+---
+
+spring:
+  profiles: dev  
+eureka:
+    instance:
+        registryFetchIntervalSeconds: 1
+        leaseRenewalIntervalInSeconds: 2
+    client:
+        initialInstanceInfoReplicationIntervalSeconds: 5

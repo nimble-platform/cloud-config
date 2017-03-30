@@ -12,3 +12,18 @@ zuul:
     business-process:
       path: /business-process/**
       serviceId: business-process-service
+
+---
+
+spring:
+  profiles: dev
+
+eureka:
+    instance:
+        registryFetchIntervalSeconds: 1
+        leaseRenewalIntervalInSeconds: 2
+        leaseExpirationDurationInSeconds: 5
+    client:
+        initialInstanceInfoReplicationIntervalSeconds: 5
+ribbon:
+    ServerListRefreshInterval: 1000
