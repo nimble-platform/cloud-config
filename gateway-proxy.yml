@@ -20,10 +20,10 @@ spring:
 
 eureka:
     instance:
-        registryFetchIntervalSeconds: 1
         leaseRenewalIntervalInSeconds: 2
         leaseExpirationDurationInSeconds: 5
     client:
         initialInstanceInfoReplicationIntervalSeconds: 5
+        registryFetchIntervalSeconds: 1
 ribbon:
     ServerListRefreshInterval: 1000
