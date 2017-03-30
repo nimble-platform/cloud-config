@@ -19,11 +19,21 @@ spring:
   profiles: dev
 
 eureka:
-    instance:
-        leaseRenewalIntervalInSeconds: 2
-        leaseExpirationDurationInSeconds: 5
-    client:
-        initialInstanceInfoReplicationIntervalSeconds: 5
+  instance:
+    leaseRenewalIntervalInSeconds: 2
+    leaseExpirationDurationInSeconds: 5
+  client:
+    initialInstanceInfoReplicationIntervalSeconds: 5
         registryFetchIntervalSeconds: 1
+        
 ribbon:
-    ServerListRefreshInterval: 1000
+  ServerListRefreshInterval: 3
+  ReadTimeout: 100000
+  ConnectTimeout: 10000
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
