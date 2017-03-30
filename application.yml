@@ -29,7 +29,7 @@ spring:
   profiles: dev  
 eureka:
     instance:
-        registryFetchIntervalSeconds: 1
-        leaseRenewalIntervalInSeconds: 2
+      leaseRenewalIntervalInSeconds: 2
     client:
-        initialInstanceInfoReplicationIntervalSeconds: 5
+      initialInstanceInfoReplicationIntervalSeconds: 5
+      registryFetchIntervalSeconds: 2
