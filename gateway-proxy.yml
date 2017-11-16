@@ -6,6 +6,7 @@ zuul:
     identity:
       path: /identity/**
       serviceId: identity-service
+      sensitiveHeaders:
     catalog:
       path: /catalog/**
       serviceId: catalogue-service-srdc
