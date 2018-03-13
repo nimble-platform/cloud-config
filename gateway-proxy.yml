@@ -13,6 +13,9 @@ zuul:
     business-process:
       path: /business-process/**
       serviceId: business-process-service
+    search:
+      path: /search/**
+      serviceId: catalog-search-service
 
 ---
 
