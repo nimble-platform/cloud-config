@@ -6,6 +6,7 @@ zuul:
     identity:
       path: /identity/**
       serviceId: identity-service
+      sensitiveHeaders:
     catalog:
       path: /catalog/**
       serviceId: catalogue-service-srdc
@@ -15,6 +16,9 @@ zuul:
     data-channel:
       path: /data-channel/**
       serviceId: data-channel-service
+    search:
+      path: /search/**
+      serviceId: catalog-search-service
 
 ---
 
