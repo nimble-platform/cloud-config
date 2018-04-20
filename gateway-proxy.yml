@@ -12,6 +12,9 @@ zuul:
     business-process:
       path: /business-process/**
       serviceId: business-process-service
+    data-channel:
+      path: /data-channel/**
+      serviceId: data-channel-service
 
 ---
 
