@@ -1,4 +1,5 @@
 zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
   routes:
     frontend:
       path: /frontend/**
@@ -16,7 +17,6 @@ zuul:
     data-channel:
       path: /data-channel/**
       serviceId: data-channel-service
-      sensitiveHeaders: Cookie,Set-Cookie
     search:
       path: /search/**
       serviceId: catalog-search-service
