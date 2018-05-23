@@ -1,5 +1,4 @@
 zuul:
-  sensitiveHeaders: Cookie,Set-Cookie
   routes:
     frontend:
       path: /frontend/**
