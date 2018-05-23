@@ -11,6 +11,7 @@ zuul:
     catalog:
       path: /catalog/**
       serviceId: catalogue-service-srdc
+      sensitiveHeaders: Cookie,Set-Cookie
     business-process:
       path: /business-process/**
       serviceId: business-process-service
@@ -21,6 +22,7 @@ zuul:
     search:
       path: /search/**
       serviceId: catalog-search-service
+      sensitiveHeaders: Cookie,Set-Cookie
 
 ---
 
