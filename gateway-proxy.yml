@@ -23,6 +23,10 @@ zuul:
       path: /search/**
       serviceId: catalog-search-service
       sensitiveHeaders: Cookie,Set-Cookie
+    tracking-analysis-service:
+      path: /tnt/**
+      serviceId: tracking-analysis-service
+      sensitiveHeaders: Cookie,Set-Cookie
 
 ---
 
