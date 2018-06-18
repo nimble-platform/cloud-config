@@ -30,6 +30,12 @@ zuul:
     frontend-v2:
       path: /frontend-v2/**
       serviceId: frontend-service-v2
+      
+spring:
+  http:
+    multipart:
+     max-file-size: 100MB
+     max-request-size: 100MB
 
 ---
 
