@@ -10,18 +10,39 @@ zuul:
     catalog:
       path: /catalog/**
       serviceId: catalogue-service-srdc
+      sensitiveHeaders: Cookie,Set-Cookie
     business-process:
       path: /business-process/**
       serviceId: business-process-service
+      sensitiveHeaders: Cookie,Set-Cookie
     data-channel:
       path: /data-channel/**
       serviceId: data-channel-service
+      sensitiveHeaders: Cookie,Set-Cookie
+    data-aggregation:
+      path: /data-aggregation/**
+      serviceId: data-aggregation-service
+      sensitiveHeaders: Cookie,Set-Cookie
     search:
       path: /search/**
       serviceId: catalog-search-service
+      sensitiveHeaders: Cookie,Set-Cookie
+    tracking-analysis-service:
+      path: /tnt/**
+      serviceId: tracking-analysis-service
+      sensitiveHeaders: Cookie,Set-Cookie
+    frontend-v2:
+      path: /frontend-v2/**
+      serviceId: frontend-service-v2
     trust:
       path: /trust/**
       serviceId: trust-service
+
+spring:
+  http:
+    multipart:
+     max-file-size: 100MB
+     max-request-size: 100MB
 
 ---
 
