@@ -19,6 +19,9 @@ zuul:
     search:
       path: /search/**
       serviceId: catalog-search-service
+    trust:
+      path: /trust/**
+      serviceId: trust-service
 
 ---
 
