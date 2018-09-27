@@ -35,7 +35,7 @@ zuul:
       path: /trust/**
       serviceId: trust-service
     identity-v2:
-      path: /identity/**
+      path: /identity-v2/**
       serviceId: identity-service-v2
       sensitiveHeaders:
 
