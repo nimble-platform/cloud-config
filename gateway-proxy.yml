@@ -31,9 +31,6 @@ zuul:
       path: /tnt/**
       serviceId: tracking-analysis-service
       sensitiveHeaders: Cookie,Set-Cookie
-    frontend-v2:
-      path: /frontend-v2/**
-      serviceId: frontend-service-v2
     trust:
       path: /trust/**
       serviceId: trust-service
