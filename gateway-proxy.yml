@@ -34,6 +34,10 @@ zuul:
     trust:
       path: /trust/**
       serviceId: trust-service
+    identity-v2:
+      path: /identity/**
+      serviceId: identity-service-v2
+      sensitiveHeaders:
 
 spring:
   http:
