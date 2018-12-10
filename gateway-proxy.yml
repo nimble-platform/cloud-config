@@ -38,7 +38,7 @@ zuul:
     frontend-fmp:
       path: /fmp/frontend/**
       serviceId: frontend-service-fmp
-    frontend-fmp:
+    frontend-fmp-test:
       path: /fmp/frontend1**
       serviceId: frontend-service-fmp
 
