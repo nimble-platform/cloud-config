@@ -35,10 +35,9 @@ zuul:
       path: /trust/**
       serviceId: trust-service
       sensitiveHeaders:
-    identity-v2:
-      path: /identity-v2/**
-      serviceId: identity-service-v2
-      sensitiveHeaders:
+    frontend-fmp:
+      path: /fmp/frontend/**
+      serviceId: frontend-service-fmp
 
 spring:
   http:
