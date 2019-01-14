@@ -35,6 +35,10 @@ zuul:
       path: /trust/**
       serviceId: trust-service
       sensitiveHeaders:
+    trust:
+      path: /index/**
+      serviceId: indexing-service
+      sensitiveHeaders:
     frontend-fmp:
       path: /fmp/frontend/**
       serviceId: frontend-service-fmp
