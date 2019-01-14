@@ -35,7 +35,7 @@ zuul:
       path: /trust/**
       serviceId: trust-service
       sensitiveHeaders:
-    trust:
+    index:
       path: /index/**
       serviceId: indexing-service
       sensitiveHeaders:
