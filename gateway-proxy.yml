@@ -42,6 +42,10 @@ zuul:
     frontend-fmp:
       path: /fmp/frontend/**
       serviceId: frontend-service-fmp
+    identity-v2:
+      path: /identity-v2/**
+      serviceId: identity-service-v2
+      sensitiveHeaders:
 
 spring:
   http:
