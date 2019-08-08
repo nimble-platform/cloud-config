@@ -69,16 +69,12 @@ eureka:
     initialInstanceInfoReplicationIntervalSeconds: 10
     registryFetchIntervalSeconds: 10
 
-ribbon:
-    ReadTimeout: 90000
-    ConnectTimeout: 90000
-
-zuul:
-    host:
-        max-total-connections: 1000
-        max-per-route-connections: 100
-    semaphore:
-        max-semaphores: 500
+frontend-service:
+ ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 60000
+  MaxTotalHttpConnections: 500
+  MaxConnectionsPerHost: 100
 
 hystrix:
     command:
