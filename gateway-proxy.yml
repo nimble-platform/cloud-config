@@ -69,11 +69,21 @@ eureka:
     initialInstanceInfoReplicationIntervalSeconds: 10
     registryFetchIntervalSeconds: 10
 
+ribbon:
+    ReadTimeout: 90000
+    ConnectTimeout: 90000
+
+zuul:
+    host:
+        max-total-connections: 1000
+        max-per-route-connections: 100
+    semaphore:
+        max-semaphores: 500
+
 hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy: THREAD
-          thread:
-            timeoutInMilliseconds: 60000
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 1000000
