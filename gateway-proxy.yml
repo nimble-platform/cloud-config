@@ -63,23 +63,17 @@ spring:
 
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 10
-    leaseExpirationDurationInSeconds: 10
+    leaseRenewalIntervalInSeconds: 2
+    leaseExpirationDurationInSeconds: 5
   client:
-    initialInstanceInfoReplicationIntervalSeconds: 10
-    registryFetchIntervalSeconds: 10
-
-frontend-service:
- ribbon:
-  ConnectTimeout: 30000
-  ReadTimeout: 60000
-  MaxTotalHttpConnections: 500
-  MaxConnectionsPerHost: 100
+    initialInstanceInfoReplicationIntervalSeconds: 5
+    registryFetchIntervalSeconds: 1
 
 hystrix:
-    command:
-        default:
-            execution:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 1000000
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000
