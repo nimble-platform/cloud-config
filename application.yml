@@ -31,5 +31,5 @@ eureka:
     instance:
       leaseRenewalIntervalInSeconds: 2
     client:
-      initialInstanceInfoReplicationIntervalSeconds: 5
-      registryFetchIntervalSeconds: 2
+      registerWithEureka: false
+      fetchRegistry: true

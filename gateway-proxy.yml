@@ -66,8 +66,8 @@ eureka:
     leaseRenewalIntervalInSeconds: 2
     leaseExpirationDurationInSeconds: 5
   client:
-    initialInstanceInfoReplicationIntervalSeconds: 5
-    registryFetchIntervalSeconds: 1
+    registerWithEureka: false
+    fetchRegistry: true
 
 hystrix:
   command:
