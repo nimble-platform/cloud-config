@@ -67,7 +67,7 @@ eureka:
     leaseExpirationDurationInSeconds: 5
   client:
     initialInstanceInfoReplicationIntervalSeconds: 5
-    registryFetchIntervalSeconds: 2
+    registryFetchIntervalSeconds: 1
 
 hystrix:
   command:
@@ -76,4 +76,4 @@ hystrix:
         isolation:
           strategy: THREAD
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 10000
