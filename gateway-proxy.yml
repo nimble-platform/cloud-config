@@ -34,7 +34,7 @@ zuul:
     trust:
       path: /trust/**
       serviceId: trust-service
-      sensitiveHeaders:
+      sensitiveHeaders: Cookie,Set-Cookie 
     index:
       path: /index/**
       serviceId: indexing-service
