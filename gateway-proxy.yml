@@ -58,12 +58,15 @@ business-process:
   ribbon:
     listOfServers: business-process-service:8085
 
+identity-service: 
+  ribbon:
+    listOfServers: identity-service:9096
+
 spring:
   http:
     multipart:
      max-file-size: 1000MB
      max-request-size: 1000MB
-
 
 
 ---
