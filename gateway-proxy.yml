@@ -50,11 +50,21 @@ zuul:
       serviceId: identity-service-v2
       sensitiveHeaders:
 
+ribbon:
+  eureka:
+    enabled: false
+
+business-process:
+  ribbon:
+    listOfServers: business-process-service:8085
+
 spring:
   http:
     multipart:
      max-file-size: 1000MB
      max-request-size: 1000MB
+
+
 
 ---
 
