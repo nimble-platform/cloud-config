@@ -50,18 +50,6 @@ zuul:
       serviceId: identity-service-v2
       sensitiveHeaders:
 
-ribbon:
-  eureka:
-    enabled: false
-
-business-process:
-  ribbon:
-    listOfServers: business-process-service:8085
-
-identity-service: 
-  ribbon:
-    listOfServers: identity-service:9096
-
 spring:
   http:
     multipart:
