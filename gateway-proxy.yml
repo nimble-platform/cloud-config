@@ -45,9 +45,16 @@ zuul:
     frontend-efactory:
       path: /efactory/frontend/**
       serviceId: frontend-service-efactory
+    frontend-efactory-efs:
+      path: /efs/frontend/**
+      serviceId: frontend-service-efs
     identity-v2:
       path: /identity-v2/**
       serviceId: identity-service-v2
+      sensitiveHeaders:
+    index:
+      path: /efsindex/**
+      serviceId: indexing-service-efs
       sensitiveHeaders:
 
 spring:
