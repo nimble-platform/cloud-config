@@ -19,6 +19,10 @@ zuul:
       path: /data-channel/**
       serviceId: data-channel-service
       sensitiveHeaders: Cookie,Set-Cookie
+    delegation:
+      path: /delegation/**
+      serviceId: delegate-service
+      sensitiveHeaders: Cookie,Set-Cookie
     data-aggregation:
       path: /data-aggregation/**
       serviceId: data-aggregation-service
