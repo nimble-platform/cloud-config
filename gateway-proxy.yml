@@ -76,11 +76,11 @@ spring:
 
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 2
-    leaseExpirationDurationInSeconds: 5
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 8
   client:
     initialInstanceInfoReplicationIntervalSeconds: 5
-    registryFetchIntervalSeconds: 1
+    registryFetchIntervalSeconds: 2
 
 hystrix:
   command:
@@ -89,4 +89,22 @@ hystrix:
         isolation:
           strategy: THREAD
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 500000
+
+zuul:
+  eureka:
+    identity-service:
+      semaphore:
+        maxSemaphores: 300
+    catalogue-service-srdc:
+      semaphore:
+        maxSemaphores: 300
+    business-process-service:
+      semaphore:
+        maxSemaphores: 300
+  host:
+    connect-timeout-millis: 1000000
+    socket-timeout-millis: 1000000
+ribbon:
+  ReadTimeout: 1000000
+  ConnectTimeout: 1000000

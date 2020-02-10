@@ -2,8 +2,8 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     preferIpAddress: ${DISCOVERY_PREFER_IP:true}
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 8
   client:
     serviceUrl:
       defaultZone: ${DISCOVERY_SERVER_URI:http://localhost:8761}/eureka/
@@ -29,7 +29,7 @@ spring:
   profiles: dev  
 eureka:
     instance:
-      leaseRenewalIntervalInSeconds: 2
+      leaseRenewalIntervalInSeconds: 5
     client:
       initialInstanceInfoReplicationIntervalSeconds: 5
       registryFetchIntervalSeconds: 2
