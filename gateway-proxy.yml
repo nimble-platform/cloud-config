@@ -60,6 +60,10 @@ zuul:
       path: /identity-v2/**
       serviceId: identity-service-v2
       sensitiveHeaders:
+    eclass-service:
+      path: /eclass/**
+      serviceId: eclass-service
+      sensitiveHeaders:
    
 
 spring:
