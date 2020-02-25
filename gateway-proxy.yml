@@ -65,7 +65,7 @@ zuul:
       serviceId: eclass-service
       sensitiveHeaders:
     asset-registry-service:
-      path: /assertregistry/**
+      path: /assetregistry/**
       serviceId: assetregistry-service
       sensitiveHeaders:
    
