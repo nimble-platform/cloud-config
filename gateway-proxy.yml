@@ -64,6 +64,10 @@ zuul:
       path: /eclass/**
       serviceId: eclass-service
       sensitiveHeaders:
+    asset-registry-service:
+      path: /assertregistry/**
+      serviceId: assetregistry-service
+      sensitiveHeaders:
    
 
 spring:
