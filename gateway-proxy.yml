@@ -68,6 +68,10 @@ zuul:
       path: /assetregistry/**
       serviceId: assetregistry-service
       sensitiveHeaders:
+    agents:
+      path: /agents/**
+      serviceId: agent-service
+      sensitiveHeaders: Cookie,Set-Cookie   
    
 
 spring:
