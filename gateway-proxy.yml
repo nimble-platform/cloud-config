@@ -63,11 +63,11 @@ zuul:
     eclass-service:
       path: /eclass/**
       serviceId: semantic-lookup-service
-      sensitiveHeaders:
+      sensitiveHeaders: Cookie,Set-Cookie
     asset-registry-service:
       path: /assetregistry/**
       serviceId: registry-service
-      sensitiveHeaders:
+      sensitiveHeaders: Cookie,Set-Cookie
     agents:
       path: /agents/**
       serviceId: agent-service
@@ -75,8 +75,8 @@ zuul:
     asset-indexing:
       path: /assetindex/**
       serviceId: asset-indexing-service
-      sensitiveHeaders:
-   
+      sensitiveHeaders: Cookie,Set-Cookie
+
 
 spring:
   http:
