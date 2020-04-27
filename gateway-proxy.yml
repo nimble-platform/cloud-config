@@ -64,8 +64,8 @@ zuul:
       path: /eclass/**
       serviceId: semantic-lookup-service
       sensitiveHeaders: Cookie,Set-Cookie
-    asset-registry-service:
-      path: /assetregistry/**
+    registry-service:
+      path: /registry-service/**
       serviceId: registry-service
       sensitiveHeaders: Cookie,Set-Cookie
     agents:
