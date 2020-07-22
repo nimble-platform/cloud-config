@@ -35,6 +35,10 @@ zuul:
       path: /tnt/**
       serviceId: tracking-analysis-service
       sensitiveHeaders: Cookie,Set-Cookie
+    tracking-service:
+      path: /tracking/**
+      serviceId: tracking-service
+      sensitiveHeaders: Cookie,Set-Cookie
     trust:
       path: /trust/**
       serviceId: trust-service
