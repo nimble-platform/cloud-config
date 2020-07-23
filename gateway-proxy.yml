@@ -80,6 +80,10 @@ zuul:
       path: /assetindex/**
       serviceId: asset-indexing-service
       sensitiveHeaders: Cookie,Set-Cookie
+    epcis-service:
+      path: /epcis-server/**
+      serviceId: epcis-service
+      sensitiveHeaders: Cookie,Set-Cookie
 
 
 spring:
