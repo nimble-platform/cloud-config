@@ -64,7 +64,7 @@ zuul:
       path: /identity-v2/**
       serviceId: identity-service-v2
       sensitiveHeaders:
-    eclass-service:
+    semantic-lookup-service:
       path: /eclass/**
       serviceId: semantic-lookup-service
       sensitiveHeaders: Cookie,Set-Cookie
