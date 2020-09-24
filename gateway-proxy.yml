@@ -51,7 +51,7 @@ zuul:
       path: /fmp/frontend/**
       serviceId: frontend-service-fmp
     frontend-efactory:
-      path: /efactory/frontend/**
+      path: /efpf/frontend/**
       serviceId: frontend-service-efactory
     frontend-efactory-efs:
       path: /efs/frontend/**
