@@ -84,6 +84,10 @@ zuul:
       path: /epcis-server/**
       serviceId: epcis-service
       sensitiveHeaders: Cookie,Set-Cookie
+    distributionnetwork:
+      path: /distributionnetwork/**
+      serviceId: distribution-network
+      sensitiveHeaders: Cookie,Set-Cookie
 
 
 spring:
