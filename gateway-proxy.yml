@@ -114,6 +114,8 @@ hystrix:
           strategy: THREAD
           thread:
             timeoutInMilliseconds: 500000
+        timeout:
+          enabled: false
 
 zuul:
   eureka:
